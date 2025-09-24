@@ -1,0 +1,32 @@
+/* src/styles.css */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+
+html, body, #app {
+  height: 100%;
+  width: 100%;
+}
+
+/* BASE PAGE BG - grid that covers the whole screen */
+body {
+  background-color: #f9f9f9;
+  background-image:
+    linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;          
+  background-position: center top;
+  background-attachment: fixed;        
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* optional: ensure cards don't push the page to create horizontal scroll */
+* { max-width: 100%; }
