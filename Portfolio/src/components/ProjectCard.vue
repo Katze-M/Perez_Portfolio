@@ -51,7 +51,7 @@ defineProps({
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(255,255,255,0); /* removed blur/overlay */
+  background: rgba(255,255,255,0);
 }
 
 .project-content {

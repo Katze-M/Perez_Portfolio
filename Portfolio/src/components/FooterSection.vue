@@ -54,7 +54,7 @@
 </template>
 
 <script setup>
-// No JS needed
+// no JS needed
 </script>
 
 <style scoped>

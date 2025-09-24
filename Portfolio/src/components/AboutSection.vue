@@ -46,7 +46,7 @@
 </template>
 
 <script setup>
-// static component
+// no JS needed
 </script>
 
 <style scoped>

@@ -30,7 +30,7 @@ const introText = "Hi, I’m Katrina Perez."
 
 onMounted(() => {
   let i = 0
-  const speed = 100 // typing speed in ms
+  const speed = 100 // typing speed in ms (for typing animation)
 
   function typeWriter() {
     if (i < introText.length) {
@@ -38,7 +38,7 @@ onMounted(() => {
       i++
       setTimeout(typeWriter, speed)
     } else {
-      // Keep cursor blinking for 2 seconds, then hide
+      //Keep cursor blinking for 2 seconds, then hide
       setTimeout(() => {
         typedText.value.classList.add('done')
       }, 2000)
@@ -87,7 +87,7 @@ onMounted(() => {
   color: #2c3e50;
   margin-bottom: 0.75rem;
   white-space: pre;
-  display: inline-block; /* ensures cursor aligns with text */
+  display: inline-block; 
 }
 
 /* Typing cursor effect */
@@ -98,12 +98,12 @@ onMounted(() => {
   height: 1em;
   background-color: #42b883;
   margin-left: 2px;
-  vertical-align: text-bottom; /* aligns cursor with text baseline */
+  vertical-align: text-bottom;
   animation: blink 0.8s steps(1) infinite;
 }
 
 .typing-text.done::after {
-  display: none; /* hide cursor after 2s */
+  display: none; 
 }
 
 @keyframes blink {

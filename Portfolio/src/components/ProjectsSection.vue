@@ -32,13 +32,12 @@
 </template>
 
 <script setup>
-import ProjectCard from './ProjectCard.vue'
+import ProjectCard from './ProjectCard.vue' //imported ProjectCard component
 </script>
 
 <style scoped>
 .projects-section {
   font-family: "Space Grotesk", "Noto Sans", sans-serif;
-  /* Subtle contrast with adjacent sections */
   background: linear-gradient(180deg, #ffffff 0%, #f5f7fa 100%);
   border-top: 1px solid #eaecef;
   border-bottom: 1px solid #eaecef;
