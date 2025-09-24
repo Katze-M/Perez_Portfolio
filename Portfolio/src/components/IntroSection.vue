@@ -8,7 +8,7 @@
         class="profile-img"
       />
 
-      <!-- Text -->
+      <!-- Short Intro About Me -->
       <div class="content">
         <h1 ref="typedText" class="typing-text"></h1>
         <p>
@@ -17,11 +17,6 @@
           at Ateneo de Zamboanga University, crafting modern, interactive, and responsive websites.
         </p>
 
-        <!-- Buttons -->
-        <div class="buttons">
-          <a href="#projects" class="btn primary">View Projects</a>
-          <a href="#contact" class="btn">Contact Me</a>
-        </div>
       </div>
     </div>
   </section>

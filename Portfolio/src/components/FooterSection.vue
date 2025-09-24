@@ -139,7 +139,7 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
-/* Brand colors on hover */
+
 .social-icon.facebook:hover {
   color: #1877f2;
 }
