@@ -130,4 +130,36 @@
     padding: 3rem;
   }
 }
+
+/*Tablet screen size CSS*/
+@media (max-width: 1024px) {
+  .card {
+    gap: 2.5rem;
+    padding: 3rem;
+  }
+  .about h2,
+  .skills h2 { font-size: 1.8rem; }
+  .about p { font-size: 1.05rem; }
+}
+
+/*Mobile layout CSS*/
+@media (max-width: 680px) {
+  .about-section {
+    padding: 3.5rem 1rem;
+  }
+  .card {
+    padding: 1.5rem 1.25rem;
+    gap: 2rem;
+    border-radius: 18px;
+  }
+  .about h2,
+  .skills h2 { font-size: 1.5rem; }
+  .about h3 { font-size: 1.15rem; }
+  .about p {
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+  .skills li { margin-bottom: 1.1rem; }
+  .bar { height: 8px; }
+}
 </style>

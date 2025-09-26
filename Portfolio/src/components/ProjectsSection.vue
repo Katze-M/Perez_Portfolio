@@ -14,17 +14,17 @@
         <ProjectCard
           title="OSAKnows Website"
           description="A fully functional platform for the AdZU Office Of Student Affairs, featuring about OSA page, lost and found, and FAQS section."
-          image="image.png"
+          image="/image.png"
         />
         <ProjectCard
           title="Data Analytics Dashboard"
           description="A data analytics dashboard analyzing the patterns and trends in AdZU Scholarships using Microsoft Excel."
-          image="image2.png"
+          image="/image2.png"
         />
         <ProjectCard
           title="Cleaning Services Website"
           description="A simple dynamic website that has a registration and login feature with the use of PHP and MySql."
-          image="image3.png"
+          image="/image3.png"
         />
       </div>
     </div>
@@ -98,5 +98,27 @@ import ProjectCard from './ProjectCard.vue' //imported ProjectCard component
 .group:hover .glassmorphism {
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+}
+
+/* Tablet screen size CSS */
+@media (max-width: 1024px) {
+  .projects-section { padding: 50px 16px; }
+  .projects-header h1 { font-size: 2.2rem; }
+  .projects-header p { font-size: 1.02rem; }
+}
+
+/* Mobile screen size CSS */
+@media (max-width: 680px) {
+  .projects-section {
+    min-height: auto;
+    padding: 40px 14px;
+  }
+  .projects-header { margin-bottom: 28px; }
+  .projects-header h1 { font-size: 1.8rem; }
+  .projects-header p {
+    font-size: 0.98rem;
+    max-width: 95%;
+  }
+  .projects-grid { gap: 16px; }
 }
 </style>

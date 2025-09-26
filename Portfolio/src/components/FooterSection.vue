@@ -171,4 +171,16 @@
     flex-direction: row;
   }
 }
+
+/*Mobile refinements CSS*/
+@media (max-width: 680px) {
+  .footer {
+    padding: 28px 16px;
+  }
+  .contact-info h3 { font-size: 20px; }
+  .contact-link span { font-size: 14px; }
+  .social-icon { padding: 10px; }
+  .social-icon svg { width: 24px; height: 24px; }
+  .footer-bottom { font-size: 14px; }
+}
 </style>

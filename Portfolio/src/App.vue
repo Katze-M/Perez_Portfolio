@@ -24,7 +24,7 @@ onMounted(() => {
         }
       })
     },
-    { threshold: 0.5 }
+    { threshold: 0.2 }
   )
 
   sections.forEach((section) => observer.observe(section))
@@ -307,6 +307,34 @@ main {
 @media (max-width: 768px) {
   .nav-links { display: none; }
   .hamburger { display: block; }
+}
+
+/* Tablet screen size CSS */
+@media (max-width: 1024px) {
+  main section { padding: 5rem 1.5rem; }
+  .navbar { padding: 0.5rem 1rem; }
+}
+
+/* Mobile screen size CSS */
+@media (max-width: 680px) {
+  html { scroll-padding-top: 80px; }
+  .navbar {
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    transform: none;
+    width: auto;
+    border-radius: 10px;
+    padding: 0.4rem 0.75rem;
+  }
+  .navbar-container { justify-content: space-between; width: 100%; }
+  nav { position: relative; width: 100%; }
+  .mobile-menu {
+    right: 0;
+    left: 0;
+    margin-top: 8px;
+  }
+  main section { padding: 4rem 1rem; }
 }
 
 /* Sections */

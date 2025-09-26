@@ -3,7 +3,7 @@
     <div class="card">
       <!-- Profile Image -->
       <img
-        src="/public/my-photo.JPG"
+        src="/my-photo.JPG"
         alt="Profile"
         class="profile-img"
       />
@@ -151,5 +151,54 @@ onMounted(() => {
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Tablet adjustments CSS */
+@media (max-width: 1024px) {
+  .card {
+    padding: 2.5rem 2rem;
+    gap: 2rem;
+    transform: translateY(-20%);
+  }
+  .content h1 {
+    font-size: 2.1rem;
+  }
+  .content p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile adjustments CSS */
+@media (max-width: 680px) {
+  .intro-section {
+    height: auto;
+    padding: 4rem 1rem 2rem;
+  }
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 1.25rem;
+    gap: 1.25rem;
+    transform: none;
+    width: 100%;
+    max-width: 520px;
+  }
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+  .content h1 {
+    font-size: 1.8rem;
+    white-space: normal;
+  }
+  .typing-text::after { height: 0.9em; }
+  .content p {
+    font-size: 0.98rem;
+    max-width: none;
+  }
+  .buttons {
+    justify-content: center;
+  }
 }
 </style>
